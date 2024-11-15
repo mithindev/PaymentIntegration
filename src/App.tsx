@@ -32,6 +32,7 @@ import ExercisePlan from "./_root/pages/ExercisePlan";
 import Exercise from "./_root/pages/results/Exercise";
 import DietPlan from "./_root/pages/results/DietPlan";
 import DietPlanPage from "./_root/pages/DietPlanPage";
+import { Analytics } from '@vercel/analytics/next';
 
 const App = () => {
   return (
@@ -85,6 +86,7 @@ const App = () => {
           {/* //* THOTTIL FEATURES */}
 
         </Route>
+        <Analytics />
       </Routes>
 
       <Toaster />
